@@ -10,7 +10,7 @@ export default function GuidelinesSection() {
     <section id="guidelines" className="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900/60 h-screen">
       <div className="text-center space-y-3 mb-12">
         <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 03 . THE REGULATIONS</div>
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">Laws of the Night</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">LAWS OF THE NIGHT</h2>
       </div>
 
       <div className="flex border-b border-slate-800 max-w-md mx-auto mb-10 p-1 bg-slate-900/40 rounded-lg">

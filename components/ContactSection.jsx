@@ -10,8 +10,8 @@ export default function ContactSection() {
       <div className="gap-12 items-center">
 
         <div className="lg:col-span-5 space-y-6">
-          <div className="text-xs font-varino text-indigo-400 uppercase tracking-widest">// 05 . CHANNELS</div>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">Signal the Nest</h2>
+          <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 05 . CONTACT US</div>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">SIGNAL THE NEST</h2>
           <p className="text-slate-300 font-normal">Have inquiries regarding team alignment limits, computational runtimes, or hosting infrastructure? Send a broadcast payload down our relay channels.</p>
           
           <div className="w-11/12 lg:w-1/4 mx-auto mt-10 flex flex-col items-center justify-center gap-y-10">

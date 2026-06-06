@@ -21,7 +21,7 @@ export default function SponsorsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-3 mb-12">
           <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 04 . OUR PARTNERS</div>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">Patrons of the Night</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">PATRONS OF THE NIGHT</h2>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-6 max-w-4xl mx-auto">
           {/* {SPONSORS.map((sp, idx) => (
