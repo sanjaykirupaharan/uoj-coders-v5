@@ -22,7 +22,7 @@ export default function ContactSection() {
           <p className="text-sm 2xl:text-base text-zinc-400 font-medium">
             President (CompSoc)
           </p>
-          <p>+94 71 641 6709 </p>
+          <p>+94 76 206 9840 </p>
         </div>
         <div className="flex flex-col items-center justify-center gap-y-1 text-white">
           <p className="font-semibold tracking-wide text-lg 2xl:text-xl">
@@ -31,7 +31,7 @@ export default function ContactSection() {
           <p className="text-sm 2xl:text-base text-zinc-400 font-medium">
             Secretary (CompSoc)
           </p>
-          <p>+94 77 566 1784 </p>
+          <p>+94 75 534 3121 </p>
         </div>
       </div>
 
@@ -41,9 +41,9 @@ export default function ContactSection() {
       </div>
 
       <div className="flex items-center gap-8 text-slate-300 m-auto px-10 w-fit">
-            <a href="#" className="hover:text-white transition-colors"><FaLinkedin size={40} /></a>
-            <a href="#" className="hover:text-white transition-colors"><FaFacebook size={40} /></a>
-            <a href="#" className="hover:text-white transition-colors"><FaYoutube size={40} /></a>
+            <a href="https://www.linkedin.com/company/compsoc-uoj/" target="_blank" className="hover:text-white transition-colors"><FaLinkedin size={40} /></a>
+            <a href="https://www.facebook.com/uojcompsoc" target="_blank" className="hover:text-white transition-colors"><FaFacebook size={40} /></a>
+            <a href="https://www.youtube.com/@CompSocUoJ" target="_blank" className="hover:text-white transition-colors"><FaYoutube size={40} /></a>
       </div>
 
       
