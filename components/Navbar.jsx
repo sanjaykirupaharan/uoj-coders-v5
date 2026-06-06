@@ -27,7 +27,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b ${
       scrolled 
         ? "border-slate-900/80 bg-[#030712]/70 backdrop-blur-md py-5" 
-        : "border-transparent bg-transparent py-6"
+        : "border-transparent bg-transparent py-5"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Owl Mascot Logo */}
@@ -38,7 +38,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8 text-md font-medium text-slate-300">
+        <div className="hidden md:flex items-center gap-8 text-sm lg:text-md font-medium text-slate-300">
           {["About", "Timeline", "Guidelines", "Sponsors", "Contact"].map((item) => (
             <button key={item} onClick={() => scrollToSection(item.toLowerCase())} className="hover:text-blue-300 transition-colors relative py-1 group">
               {item}

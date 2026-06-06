@@ -13,7 +13,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 lg:py-0 px-4 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-15 md:pt-24 pb-16 lg:py-0 px-4 overflow-hidden">
     <BackgroundBeamsWithCollision>
       {/* Decorative Night Sky Blur Clusters */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none animate-pulse duration-[6000ms]" />
@@ -28,7 +28,7 @@ export default function HeroSection() {
           className="w-full flex justify-center lg:justify-start"
         >
 
-          <div className="relative w-full max-w-[500px] aspect-square rounded-3xl border border-transparent bg-slate-900/5 backdrop-blur-md p-1 flex items-center justify-center group overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.02)]">
+          <div className="relative w-full max-w-[400px] lg:max-w-[500px] aspect-square rounded-3xl border border-transparent bg-slate-900/5 backdrop-blur-md md:p-1 flex items-center justify-center group overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.02)]">
             <img src="/moon-v5.png" alt="UOJ Coders" className="w-fit h-fits object-contain" />
             
             {/* Corner Tech Accents matching your old design language but adjusted for theme */}
@@ -39,12 +39,12 @@ export default function HeroSection() {
           </div>
         </motion.div>
 
-        <div className="flex flex-col items-start text-left w-full">
+        <div className="flex flex-col items-start text-center lg:text-left w-full">
           
           <motion.div 
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-varino text-slate-300 mb-6"
+            className="inline-flex m-auto lg:mx-0 items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-varino text-slate-300 mb-6"
           >
             <Moon size={12} className="text-blue-400 animate-pulse" />
             THE ULTIMATE LATE-NIGHT CRUCIBLE
@@ -54,7 +54,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.15] text-white"
+            className="text-3xl sm:text-5xl text-center m-auto lg:text-left lg:text-6xl font-bold tracking-tight mb-6 leading-[1.15] text-white"
           >
             Wisdom is Built<br />
             <span className="bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent">
@@ -66,7 +66,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-base sm:text-lg text-slate-300 max-w-xl mb-10 font-normal leading-relaxed"
+            className="text-base sm:text-lg text-slate-300 m-auto lg:mx-0 max-w-xl mb-10 font-normal leading-relaxed"
           >
             When the rest of the world sleeps, the owls build. 
           </motion.p>
@@ -75,11 +75,11 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
+            className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto grid grid-cols-2"
           >
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfxCO5w4OF_ZGoBmcX1dgnbgYRBxrf-IpopGY6qbtUni5OTfQ/viewform?usp=header" target="_blank">
             <button 
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-violet-400 to-blue-500 text-slate-950 font-bold shadow-lg shadow-blue-500/10 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 z-40"
+              className="w-full sm:w-auto p-2 lg:px-8 lg:py-4 rounded-xl bg-gradient-to-r from-violet-400 to-blue-500 text-slate-950 font-bold shadow-lg shadow-blue-500/10 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 z-40"
               >
               Register Now <ChevronRight size={16} />
             </button>
@@ -87,7 +87,7 @@ export default function HeroSection() {
             
             <button 
               onClick={() => scrollToSection("timeline")} 
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:bg-slate-900 transition-all font-semibold flex items-center justify-center gap-2 text-slate-300 z-40"
+              className="w-full sm:w-auto p-2 lg:px-8 lg:py-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:bg-slate-900 transition-all font-semibold flex items-center justify-center gap-2 text-slate-300 z-40"
             >
               <Compass size={16} className="text-indigo-400" /> View Timeline
             </button>
