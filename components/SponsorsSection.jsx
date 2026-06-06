@@ -1,7 +1,12 @@
 "use client";
 import React from "react";
-import { EncryptedText } from "@/components/ui/encrypted-text";
 import { SquigglyText } from "@/components/ui/squiggly-text";
+import dynamic from "next/dynamic";
+
+const EncryptedText = dynamic(
+  () => import("./ui/encrypted-text"),
+  { ssr: false }
+);
 
 const SPONSORS = [
   { name: "Nebula Compute", tier: "Celestial", logo: "🌌" },

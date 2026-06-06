@@ -119,3 +119,5 @@ export const EncryptedText = ({
     </motion.span>
   );
 };
+
+export default EncryptedText;

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion } from "framer-motion";
 import { ChevronRight, Moon, Compass } from "lucide-react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
@@ -76,23 +77,24 @@ export default function HeroSection() {
             transition={{ delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
           >
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfxCO5w4OF_ZGoBmcX1dgnbgYRBxrf-IpopGY6qbtUni5OTfQ/viewform?usp=header" target="_blank">
             <button 
-              onClick={() => scrollToSection("contact")} 
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-violet-400 to-blue-500 text-slate-950 font-bold shadow-lg shadow-blue-500/10 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2"
-            >
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-violet-400 to-blue-500 text-slate-950 font-bold shadow-lg shadow-blue-500/10 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 z-40"
+              >
               Register Now <ChevronRight size={16} />
             </button>
+              </Link>
             
             <button 
               onClick={() => scrollToSection("timeline")} 
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:bg-slate-900 transition-all font-semibold flex items-center justify-center gap-2 text-slate-300"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:bg-slate-900 transition-all font-semibold flex items-center justify-center gap-2 text-slate-300 z-40"
             >
               <Compass size={16} className="text-indigo-400" /> View Timeline
             </button>
           </motion.div>
           
         </div>
-        <img src="/jaffna-silhouette.png" alt="Jaffna" className="absolute left-0 bottom-0 translate-y-[40%] w-screen h-auto filter grayscale z-40 md:scale-100 scale-125 " />
+        <img src="/jaffna-silhouette.png" alt="Jaffna" className="absolute left-0 bottom-0 translate-y-[40%] w-screen h-auto filter grayscale  md:scale-100 scale-125 -z-10" />
 
       </div>
     </BackgroundBeamsWithCollision>
