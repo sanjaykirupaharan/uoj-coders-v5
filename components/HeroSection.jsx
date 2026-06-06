@@ -27,12 +27,12 @@ export default function HeroSection() {
         >
 
           <div className="relative w-full max-w-[450px] aspect-square rounded-3xl border border-transparent bg-slate-900/10 backdrop-blur-md p-8 flex items-center justify-center group overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.02)]">
-
-            {/* OPTION B: Un-comment this line when you have a local image file ready */}
             <img src="/moon-v4.png" alt="UOJ Coders" className="w-fit h-fits object-contain" />
+            
             {/* Corner Tech Accents matching your old design language but adjusted for theme */}
             <div className="absolute top-4 left-4 w-4 h-4 border-t-2 border-l-2 border-slate-800 group-hover:border-blue-400/40 transition-colors" />
-
+            <div className="absolute top-4 right-4 w-4 h-4 border-t-2 border-r-2 border-slate-800 group-hover:border-blue-400/40 transition-colors" />
+            <div className="absolute bottom-4 left-4 w-4 h-4 border-b-2 border-l-2 border-slate-800 group-hover:border-blue-400/40 transition-colors" />
             <div className="absolute bottom-4 right-4 w-4 h-4 border-b-2 border-r-2 border-slate-800 group-hover:border-indigo-500/40 transition-colors" />
           </div>
         </motion.div>

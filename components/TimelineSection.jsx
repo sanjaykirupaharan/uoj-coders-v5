@@ -4,10 +4,41 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Calendar, Clock } from "lucide-react";
 
 const TIMELINE_DATA = [
-  { id: 1, title: "Registration Opens", date: "Oct 01, 2026", shortDesc: "Lock your team configuration early.", longDesc: "Form alignments of up to 3 architects. Early entrants receive priority slots into our cloud runtime testing sandboxes.", status: "current" },
-  { id: 2, title: "Registration Closes", date: "Nov 15, 2026", shortDesc: "Calibrate systems and testing pipelines.", longDesc: "A brief 3-hour infrastructure run on the automated judge cluster. Test your IDE configurations and parse synthetic entry keys.", status: "upcoming" },
-  { id: 3, title: "Final Night", date: "Dec 05, 2026", shortDesc: "12 continuous hours of compilation.", longDesc: "The prime event. Build and test robust solutions responding to secret operational prompts deployed precisely at midnight.", status: "upcoming" },
-  { id: 4, title: "Awarding Ceremony", date: "Dec 08, 2026", shortDesc: "Evaluation by the elder panel.", longDesc: "Code submission checking runs automatically. Verified finalists will present architecture components live to the lead panels.", status: "upcoming" }
+  { 
+    id: 1, 
+    title: "Registration Opens",
+    date: "June 08, 2026", 
+    shortDesc: "Lock your team configuration early.", 
+    longDesc: "Form alignments of up to 3 architects. Early entrants receive priority slots.", 
+    status: "current",
+    time: "06.00 am"
+  },
+  { 
+    id: 2, 
+    title: "Registration Closes", 
+    date: "June 15, 2026", 
+    shortDesc: "Calibrate systems and testing pipelines.", 
+    longDesc: "The first 40 teams will be selected.", 
+    status: "upcoming",
+    time: "23.59 pm" 
+  },
+  { 
+    id: 3, 
+    title: "Final Night", 
+    date: "July 18, 2026", 
+    shortDesc: "12 continuous hours of compilation.", 
+    longDesc: "The prime event. Build and test robust solutions responding to problems deployed.", 
+    status: "upcoming",
+    time: "18.00 pm" 
+  },
+  { 
+    id: 4, 
+    title: "Awarding Ceremony", 
+    date: "July 19, 2026", 
+    shortDesc: "Evaluation by the panel.", 
+    longDesc: "Code submission checking runs automatically. Verified finalists will present architecture components live to the lead panels.", status: "upcoming",
+    time: "06.00 am" 
+  }
 ];
 
 export default function TimelineSection() {
@@ -48,7 +79,7 @@ export default function TimelineSection() {
                     <h3 className="font-bold text-lg text-slate-100 flex items-center gap-2">
                       {item.title}
                       {item.status === 'current' && (
-                        <span className="text-[10px] px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20 font-varino animate-pulse">
+                        <span className="text-[10px] px-2 py-0.5 rounded bg-sky-100/10 text-blue-600 border border-violet-500/20 font-varino animate-pulse">
                           IN FLIGHT
                         </span>
                       )}
@@ -66,8 +97,8 @@ export default function TimelineSection() {
                         <div className="mt-4 pt-4 border-t border-slate-800 text-sm text-slate-300 space-y-3 font-normal leading-relaxed">
                           <p>{item.longDesc}</p>
                           <div className="flex gap-4 pt-1 text-xs font-varino text-blue-400">
-                            <span className="flex items-center gap-1"><Calendar size={12}/> Global Registry</span>
-                            <span className="flex items-center gap-1"><Clock size={12}/> 23:59 UTC</span>
+                            <span className="flex items-center gap-1"><Calendar size={12}/> {item.date}</span>
+                            <span className="flex items-center gap-1"><Clock size={12}/> {item.time}</span>
                           </div>
                         </div>
                       </motion.div>
