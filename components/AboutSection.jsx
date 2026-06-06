@@ -4,7 +4,7 @@ import { Moon, Eye, Trophy, Timer } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className=" text-center  py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative border-t border-slate-900/60">
+    <section id="about" className=" text-center py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative border-t border-slate-900/60">
       <div className="gap-12 items-center">
         <div className="text-center space-y-3 mb-16">
           <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 01 . NOCTURNAL VISION</div>
@@ -25,7 +25,7 @@ export default function AboutSection() {
             UoJCoders v3.0 took place on October 12th and 13th, 2024. More than 100 teams joined the elimination round, and 22 teams were selected for the finals.
           </p>
           <p className="text-slate-300 md:text-xl leading-relaxed font-normal">
-            UoJCoders v4.0 took place on October 12th and 13th, 2024. More than 100 teams joined the elimination round, and 22 teams were selected for the finals.
+            UoJCoders v4.0 took place on August 23th and 24th, 2024. More than 100 teams joined the elimination round, and 40 teams were selected for the finals.
           </p>
         </div>
         

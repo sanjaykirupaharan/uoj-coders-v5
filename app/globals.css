@@ -5,11 +5,18 @@
   --foreground: #171717;
 }
 
+@font-face {
+  font-family: "varino";
+  src: url("/fonts/Varino.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-varino: var(--font-geist-mono);
+  --font-varino: var(--font-geist-sans);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,4 +34,30 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: slategray;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: slategray;
+}
+
+/* Track Piece */
+::-webkit-scrollbar-track-piece {
+  background: #020712;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#000000, #472ac7, #000000);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(#000000, #bf1ed4, #000000);
 }

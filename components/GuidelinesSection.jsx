@@ -7,14 +7,14 @@ export default function GuidelinesSection() {
   const [activeTab, setActiveTab] = useState("rules");
 
   return (
-    <section id="guidelines" className="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900/60">
+    <section id="guidelines" className="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900/60 h-screen">
       <div className="text-center space-y-3 mb-12">
-        <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 03 . THE CODEX</div>
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">Laws of the Forest</h2>
+        <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 03 . THE REGULATIONS</div>
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">Laws of the Night</h2>
       </div>
 
       <div className="flex border-b border-slate-800 max-w-md mx-auto mb-10 p-1 bg-slate-900/40 rounded-lg">
-        {["rules", "eligibility", "architecture"].map((tab) => (
+        {["rules", "eligibility"].map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
@@ -33,16 +33,41 @@ export default function GuidelinesSection() {
         <AnimatePresence mode="wait">
           {activeTab === "rules" && (
             <motion.div key="rules" initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -4 }} className="space-y-4">
+
               <div className="flex items-start gap-3">
-                <ShieldAlert className="text-blue-500 mt-1 shrink-0" size={18} />
+                <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-                  <strong>Academic Honor:</strong> All submitted software assets run through custom syntax evaluation algorithms. Code copy tracking blocks plagiarism parameters instantly.
+                  A team can have up to 3 members.
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-                  <strong>Live Environments:</strong> Production code drops must happen within the assigned group remote repository provided by the admin orchestrators.
+                  There are no elimination rounds this year.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
+                  Only 40 teams will be selected for the competition.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
+                  Team members must solve the problems without any assistance from other people, pre-written code, or AI tools. Plagiarized teams will be disqualified.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
+                  All final decisions will be made by the Computer Society (CompSoc), Department of Computer Science, University of Jaffna.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
+                  The final round will take place from July 18th at 6 PM to July 19th at 6 AM, 2026, at the Department of Computer Science, University of Jaffna.
                 </p>
               </div>
             </motion.div>
@@ -53,18 +78,13 @@ export default function GuidelinesSection() {
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="text-emerald-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-                  <strong>Open Entry:</strong> Welcome to university scholars, logic developers, and production engineers globally. Group structures caps at 4 heads.
+                  <strong>Undergraduates:</strong> Only exclusive to undergraduate students currently enrolled in Sri Lankan universities or institutions.
                 </p>
               </div>
-            </motion.div>
-          )}
-
-          {activeTab === "architecture" && (
-            <motion.div key="architecture" initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -4 }} className="space-y-4">
               <div className="flex items-start gap-3">
-                <Moon className="text-purple-400 mt-1 shrink-0" size={18} />
+                <CheckCircle2 className="text-emerald-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-                  <strong>Allowed Syntaxes:</strong> Compilers process Rust, Go, Python, C++, and TypeScript. Infrastructure layers must use modern system endpoints.
+                  <strong>Team:</strong> Each team can consist of a minimum of 1 and a maximum of 3 members.
                 </p>
               </div>
             </motion.div>
@@ -72,8 +92,7 @@ export default function GuidelinesSection() {
         </AnimatePresence>
 
         <div className="mt-8 pt-6 border-t border-slate-900/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-varino text-slate-500">
-          <span>CODEX_V2026 // SYSTEM_RUN</span>
-          <a href="#" className="text-blue-400 hover:underline inline-flex items-center gap-1">Download Flight Parameters <ExternalLink size={12}/></a>
+          <span>UoJ Coders v5 - 2026 // SYSTEM_RUN</span>
         </div>
       </div>
     </section>
