@@ -1,6 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  output: 'export',
+  // assetPrefix: '/',
+  trailingSlash: true,
+  experimental: {
+    viewTransition: true,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+    unoptimized: true
+  },
+
 };
 
 export default nextConfig;
