@@ -64,8 +64,8 @@ export default function TimelineSection() {
 
                 <div className={`absolute -left-[6px] top-3.5 h-3 w-3 rounded-full border transition-all duration-300 ${
                   item.status === 'past' ? 'bg-slate-800 border-slate-700' :
-                  item.status === 'current' ? 'bg-fuchsia-500 border-fuchsia-500 shadow-[0_0_10px_rgba(251,191,36,0.4)] scale-125' :
-                  'bg-slate-950 border-slate-700 group-hover:border-fuchsia-500'
+                  item.status === 'current' ? 'bg-blue-500 border-blue-400 shadow-[0_0_10px_rgba(251,191,36,0.4)] scale-125' :
+                  'bg-slate-950 border-slate-700 group-hover:border-blue-400'
                 }`} />
 
                 <motion.div 
@@ -76,11 +76,11 @@ export default function TimelineSection() {
                   }`}
                 >
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                    <span className="sm:hidden font-varino text-xs text-fuchsia-500 mb-1">{item.date}</span>
+                    <span className="sm:hidden font-varino text-xs text-blue-400 mb-1">{item.date}</span>
                     <h3 className="font-bold text-lg text-slate-100 flex items-center gap-2">
                       {item.title}
                       {item.status === 'current' && (
-                        <span className="text-[10px] px-2 py-0.5 rounded bg-sky-100/0 text-fuchsia-500 border border-violet-500/20 font-varino animate-pulse">
+                        <span className="text-[10px] px-2 py-0.5 rounded bg-sky-100/0 text-blue-400 border border-violet-500/20 font-varino animate-pulse">
                           IN FLIGHT
                         </span>
                       )}
@@ -97,7 +97,7 @@ export default function TimelineSection() {
                       <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }} className="overflow-hidden">
                         <div className="mt-4 pt-4 border-t border-slate-800 text-sm text-slate-300 space-y-3 font-normal leading-relaxed">
                           <p>{item.longDesc}</p>
-                          <div className="flex gap-4 pt-1 text-xs font-varino text-fuchsia-500">
+                          <div className="flex gap-4 pt-1 text-xs font-varino text-blue-400">
                             <span className="flex items-center gap-1"><Calendar size={12}/> {item.date}</span>
                             <span className="flex items-center gap-1"><Clock size={12}/> {item.time}</span>
                           </div>

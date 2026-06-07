@@ -35,37 +35,37 @@ export default function GuidelinesSection() {
             <motion.div key="rules" initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -4 }} className="space-y-4">
 
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
+                <CheckCircle2 className="text-blue-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
                   A team can have up to 3 members.
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
+                <CheckCircle2 className="text-blue-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
                   There are no elimination rounds this year.
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
+                <CheckCircle2 className="text-blue-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
                   Only 40 teams will be selected for the competition.
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
+                <CheckCircle2 className="text-blue-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
                   Team members must solve the problems without any assistance from other people, pre-written code, or AI tools. Plagiarized teams will be disqualified.
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
+                <CheckCircle2 className="text-blue-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
                   All final decisions will be made by the Computer Society (CompSoc), University of Jaffna.
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
+                <CheckCircle2 className="text-blue-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
                   The final round will take place from July 18th at 6 PM to July 19th at 6 AM, 2026, at the Department of Computer Science, University of Jaffna.
                 </p>

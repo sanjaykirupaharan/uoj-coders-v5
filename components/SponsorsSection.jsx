@@ -36,11 +36,11 @@ export default function SponsorsSection() {
            <SquigglyText
           stepDuration={70}
           scale={[2, 4]}
-          className="text-amber-500"
+          className="text-center text-amber-500"
         >
           <EncryptedText 
           text="Announcing our sponsors soon..." 
-          className="text-4xl" 
+          className="text-4xl text-center" 
           vencryptedClassName="text-red-900"
           revealedClassName="text-slate-300" 
           revealDelayMs={50}

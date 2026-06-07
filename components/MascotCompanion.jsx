@@ -61,7 +61,7 @@ const owlQuotes=[ "Chasing midnight bugs until sunrise comes",
   }, [scrollY]);
 
   return (
-    <div className="fixed bottom-10 right-10 z-50 pointer-events-none flex flex-col items-end gap-2 select-none">
+    <div className="fixed bottom-10 right-10 z-50 pointer-events-none flex flex-col items-end gap-2 select-none hidden md:inline">
       
       <motion.div
         animate={{ 
@@ -91,13 +91,12 @@ const owlQuotes=[ "Chasing midnight bugs until sunrise comes",
         {/* Magic Flight Trail Sparks */}
         <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-amber-400 to-indigo-500 opacity-0 group-hover:opacity-30 blur-md transition-opacity" />
 
-        {/* 2. REPLACED SVG WITH IMAGE COMPONENT */}
         <Image 
-          src="/owl2bg.png" // 👈 Matches filename in /public
-          alt="Night Owl Mascot Companion" 
+          src="/owl-mascot.png" // 👈 Matches filename in /public
+          alt="Night Owl" 
           width={56} // H-14 equivalent (14*4=56)
           height={56}
-          className="transform group-hover:scale-105 transition-transform"
+          className="transform group-hover:scale-105 transition-transform "
         />
 
       </motion.div>
