@@ -9,7 +9,7 @@ export default function GuidelinesSection() {
   return (
     <section id="guidelines" className="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900/60 h-auto lg:h-screen">
       <div className="text-center space-y-3 mb-12">
-        <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 03 . THE REGULATIONS</div>
+        <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 03 . THE GROUND RULES</div>
         <h2 className="text-3xl sm:text-4xl font-cust font-bold  bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent w-fit mx-auto">LAWS OF THE NIGHT</h2>
       </div>
 
@@ -61,7 +61,7 @@ export default function GuidelinesSection() {
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="text-indigo-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-                  All final decisions will be made by the Computer Society (CompSoc), Department of Computer Science, University of Jaffna.
+                  All final decisions will be made by the Computer Society (CompSoc), University of Jaffna.
                 </p>
               </div>
               <div className="flex items-start gap-3">

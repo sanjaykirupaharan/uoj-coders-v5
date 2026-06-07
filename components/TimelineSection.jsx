@@ -11,14 +11,14 @@ const TIMELINE_DATA = [
     shortDesc: "Lock your team configuration early.", 
     longDesc: "Form alignments of up to 3 architects. Early entrants receive priority slots.", 
     status: "current",
-    time: "06.00 am"
+    time: "14.30 pm"
   },
   { 
     id: 2, 
     title: "Registration Closes", 
-    date: "June 15, 2026", 
-    shortDesc: "Calibrate systems and testing pipelines.", 
-    longDesc: "The first 40 teams will be selected.", 
+    date: "June 14, 2026", 
+    shortDesc: "Sync your sleep cycles.", 
+    longDesc: "The entry script terminates automatically once forty coding teams register successfully. Fuel up on caffeine because forty selected teams will enter the dark.", 
     status: "upcoming",
     time: "23.59 pm" 
   },
@@ -27,7 +27,7 @@ const TIMELINE_DATA = [
     title: "Final Night", 
     date: "July 18, 2026", 
     shortDesc: "12 continuous hours of compilation.", 
-    longDesc: "The prime event. Build and test robust solutions responding to problems deployed.", 
+    longDesc: "The prime event. Build and test robust solutions responding to problems thrown.", 
     status: "upcoming",
     time: "18.00 pm" 
   },
@@ -35,20 +35,21 @@ const TIMELINE_DATA = [
     id: 4, 
     title: "Awarding Ceremony", 
     date: "July 19, 2026", 
-    shortDesc: "Evaluation by the panel.", 
-    longDesc: "Code submission checking runs automatically. Verified finalists will present architecture components live to the lead panels.", status: "upcoming",
+    shortDesc: "Victory at the Dawn.", 
+    longDesc: "From midnight coding to morning glory, we honor the ultimate developers.",
+    status: "upcoming",
     time: "06.00 am" 
   }
 ];
 
 export default function TimelineSection() {
-  const [activeItem, setActiveItem] = useState(2);
+  const [activeItem, setActiveItem] = useState(1);
 
   return (
     <section id="timeline" className="py-24 bg-slate-950/40 border-t border-slate-900/60 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-3 mb-16">
-          <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 02 . CELESTIAL ALIGNMENT</div>
+          <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 02 . THE TRAJECTORY</div>
           <h2 className="text-3xl sm:text-4xl font-cust font-bold  bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent w-fit mx-auto">TIMELINE PROGRESSION</h2>
         </div>
 
