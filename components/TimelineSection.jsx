@@ -49,8 +49,8 @@ export default function TimelineSection() {
     <section id="timeline" className="py-24 bg-slate-950/40 border-t border-slate-900/60 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-3 mb-16">
-          <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 02 . THE TRAJECTORY</div>
-          <h2 className="text-3xl sm:text-4xl font-cust font-bold  bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent w-fit mx-auto">TIMELINE PROGRESSION</h2>
+          <div className="text-xs font-varino text-pink-400 uppercase tracking-widest">// 02 . THE TRAJECTORY</div>
+          <h2 className="text-3xl sm:text-4xl font-cust font-bold  bg-gradient-to-r from-violet-500 via-cyan-400 to-indigo-500 bg-clip-text text-transparent w-fit mx-auto">TIMELINE PROGRESSION</h2>
         </div>
 
         <div className="relative border-l border-slate-800/80 ml-4 sm:ml-32 space-y-8 py-2">

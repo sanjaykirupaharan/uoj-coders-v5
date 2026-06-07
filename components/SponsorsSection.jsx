@@ -20,8 +20,8 @@ export default function SponsorsSection() {
     <section id="sponsors" className="py-24 bg-slate-950/20 border-t border-slate-900/60 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-3 mb-12">
-          <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 04 . POWERED BY</div>
-          <h2 className="text-3xl sm:text-4xl font-cust font-bold bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent w-fit mx-auto">PATRONS OF THE NIGHT</h2>
+          <div className="text-xs font-varino text-pink-400 uppercase tracking-widest">// 04 . POWERED BY</div>
+          <h2 className="text-3xl sm:text-4xl font-cust font-bold bg-gradient-to-r from-violet-500 via-cyan-400 to-indigo-500 bg-clip-text text-transparent w-fit mx-auto">PATRONS OF THE NIGHT</h2>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-6 max-w-4xl mx-auto">
           {/* {SPONSORS.map((sp, idx) => (
@@ -36,7 +36,7 @@ export default function SponsorsSection() {
            <SquigglyText
           stepDuration={70}
           scale={[2, 4]}
-          className="text-center text-amber-500"
+          className="text-center text-pink-500"
         >
           <EncryptedText 
           text="Announcing our sponsors soon..." 

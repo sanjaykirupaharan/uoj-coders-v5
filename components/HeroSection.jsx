@@ -46,7 +46,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex m-auto lg:mx-0 items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-varino text-slate-300 mb-6"
           >
-            <Moon size={12} className="text-blue-400 animate-pulse" />
+            <Moon size={12} className="text-pink-400 animate-pulse" />
             THE ULTIMATE LATE-NIGHT CRUCIBLE
           </motion.div>
 
@@ -57,7 +57,7 @@ export default function HeroSection() {
             className="text-3xl sm:text-5xl text-center m-auto lg:text-left lg:text-6xl font-bold tracking-tight mb-6 leading-[1.15] text-white"
           >
             Wisdom is Built<br />
-            <span className="bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-violet-500 via-cyan-400 to-indigo-500 bg-clip-text text-transparent">
               In the Dead of Night.
             </span>
           </motion.h1>
@@ -79,7 +79,7 @@ export default function HeroSection() {
           >
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfxCO5w4OF_ZGoBmcX1dgnbgYRBxrf-IpopGY6qbtUni5OTfQ/viewform?usp=header" target="_blank">
             <button 
-              className="w-full sm:w-auto p-2 lg:px-8 lg:py-4 rounded-xl bg-gradient-to-r from-violet-400 to-blue-500 text-slate-950 font-bold shadow-lg shadow-blue-500/10 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 z-40"
+              className="w-full sm:w-auto p-2 lg:px-8 lg:py-4 rounded-xl bg-gradient-to-r from-violet-500 to-cyan-500 text-slate-950 font-bold shadow-lg shadow-blue-500/10 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 z-40"
               >
               Register Now <ChevronRight size={16} />
             </button>
