@@ -7,7 +7,7 @@ export default function AboutSection() {
     <section id="about" className=" text-center py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative border-t border-slate-900/60">
       <div className="gap-12 items-center">
         <div className="text-center space-y-3 mb-16">
-          <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 01 . NOCTURNAL VISION</div>
+          <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 01 . THE BLUEPRINT</div>
           <h2 className="text-3xl sm:text-5xl font-cust font-bold bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent mb-16 w-fit mx-auto">UOJ CODERS</h2>
           <p className="text-slate-300 md:text-xl leading-relaxed font-normal">
            UoJCoders v5.0 is an intensive, 12-hour inter-university competitive programming hackathon open to all undergraduate students across Sri Lanka. Jointly organized by the Computer Society and the Department of Computer Science at the University of Jaffna, the event is specifically designed to sharpen the algorithmic thinking and complex problem-solving skills of future computing professionals.
