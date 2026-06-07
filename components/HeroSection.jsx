@@ -29,7 +29,7 @@ export default function HeroSection() {
         >
 
           <div className="relative w-full max-w-[400px] lg:max-w-[500px] aspect-square rounded-3xl border border-transparent bg-slate-900/5 backdrop-blur-md md:p-1 flex items-center justify-center group overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.02)]">
-            <img src="/moon-v5.png" alt="UOJ Coders" className="w-fit h-fits object-contain" />
+            <img src="/moon-v5-new.png" alt="UOJ Coders" className="w-fit h-fits object-contain" />
             
             {/* Corner Tech Accents matching your old design language but adjusted for theme */}
             <div className="absolute top-4 left-4 w-4 h-4 border-t-2 border-l-2 border-slate-900 group-hover:border-fuchsia-500/50 transition-colors" />

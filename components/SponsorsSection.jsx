@@ -41,8 +41,8 @@ export default function SponsorsSection() {
           <EncryptedText 
           text="Announcing our sponsors soon..." 
           className="text-4xl" 
-          vencryptedClassName="text-neutral-500"
-          revealedClassName="dark:text-white text-black" 
+          vencryptedClassName="text-red-900"
+          revealedClassName="text-slate-300" 
           revealDelayMs={50}
           />
         </SquigglyText>{" "}
