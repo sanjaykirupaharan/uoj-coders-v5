@@ -27,13 +27,13 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b ${
       scrolled 
         ? "border-slate-900/80 bg-[#030712]/70 backdrop-blur-md py-5" 
-        : "border-transparent bg-transparent py-5"
+        : "border-transparent bg-transparent py-6"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Owl Mascot Logo */}
         <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <span className="font-varino font-bold tracking-wider text-2xl bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent">
-            UOJ CODERS
+          <span className="font-cust font-bold tracking-tight text-2xl bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent">
+            UOJ CODERS v5.0
           </span>
         </div>
 

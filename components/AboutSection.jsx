@@ -8,12 +8,12 @@ export default function AboutSection() {
       <div className="gap-12 items-center">
         <div className="text-center space-y-3 mb-16">
           <div className="text-xs font-varino text-blue-400 uppercase tracking-widest">// 01 . NOCTURNAL VISION</div>
-          <h2 className="text-3xl sm:text-5xl font-varino font-bold tracking-tight text-white mb-16">UOJ CODERS</h2>
+          <h2 className="text-3xl sm:text-5xl font-cust font-bold bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent mb-16 w-fit mx-auto">UOJ CODERS</h2>
           <p className="text-slate-300 md:text-xl leading-relaxed font-normal">
-           UoJCoders v4.0 is a 12-hour coding inter-university competition. It's organized by the Computer Society and the Department of Computer Science at the University of Jaffna. The goal is to help students improve their coding and problem-solving skills, especially those studying computing. The event, inspired by IEEEXtreme, is open to all undergraduate students in Sri Lanka.
+           UoJCoders v5.0 is a 12-hour coding inter-university competition. It's organized by the Computer Society and the Department of Computer Science at the University of Jaffna. The goal is to help students improve their coding and problem-solving skills, especially those studying computing. The event, inspired by IEEEXtreme, is open to all undergraduate students in Sri Lanka.
           </p>
           <p className="text-slate-300 md:text-xl leading-relaxed font-normal">
-           The UoJCoders v4.0 competition is planned to be held on on August 23th and 24th, 2025, at the Department of Computer Science, University of Jaffna. It’s a 12-hour online coding challenge run through the Moodle , which uses a special tool called Virtual Programming Lab (VPL) plug-in plug-in along with a a separate Jail system. This setup makes sure each participant works in a safe and private coding space. Even though the contest is online, participants must be physically present at the venue. The problems will focus on real-life situations, and students are encouraged to use the right data structures and algorithms to solve them.
+           The UoJCoders v5.0 competition is planned to be held on on July 18th & 19th, 2026, at the Department of Computer Science, University of Jaffna. It’s a 12-hour online coding challenge run through the Moodle , which uses a special tool called Virtual Programming Lab (VPL) plug-in plug-in along with a a separate Jail system. This setup makes sure each participant works in a safe and private coding space. Even though the contest is online, participants must be physically present at the venue. The problems will focus on real-life situations, and students are encouraged to use the right data structures and algorithms to solve them.
           </p>
           <p className="text-slate-300 md:text-xl leading-relaxed font-normal">
             UoJCoders v1.0 was held on March 16th and 17th, 2019. Over 200 teams joined the elimination round, and 25 teams made it to the finals.

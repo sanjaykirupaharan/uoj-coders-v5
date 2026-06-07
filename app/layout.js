@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +12,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const cust = localFont({
+  src: '../public/fonts/Varino-Normal.otf',
+  variable: '--font-cust',
+  display: 'swap',
+});
+
 export const metadata = {
   title: "UOJ Coders v5.0 - (2026)",
   description: "12 hour coding competition",
@@ -20,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${cust.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">{children}</body>
