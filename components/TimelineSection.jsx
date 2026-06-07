@@ -11,7 +11,7 @@ const TIMELINE_DATA = [
     shortDesc: "Lock your team configuration early.", 
     longDesc: "Form alignments of up to 3 architects. Early entrants receive priority slots.", 
     status: "current",
-    time: "14.30 pm"
+    time: "18.00 pm"
   },
   { 
     id: 2, 
