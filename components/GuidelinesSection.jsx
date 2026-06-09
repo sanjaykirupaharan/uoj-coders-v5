@@ -84,7 +84,13 @@ export default function GuidelinesSection() {
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="text-emerald-400 mt-1 shrink-0" size={18} />
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-                  <strong>Team:</strong> Each team can consist of a minimum of 1 and a maximum of 3 members.
+                  <strong>Members:</strong> Each team can consist of a minimum of 1 and a maximum of 3 members.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="text-emerald-400 mt-1 shrink-0" size={18} />
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
+                  <strong>Team:</strong> All the members in the team must be from the same university.
                 </p>
               </div>
             </motion.div>
