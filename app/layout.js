@@ -20,7 +20,10 @@ const cust = localFont({
 
 export const metadata = {
   title: "UOJ Coders v5.0 - (2026)",
-  description: "12 hour coding competition",
+  description: "12-hour inter-university competitive programming hackathon.",
+  keywords: ["Hackathon", "Coding Competition"],
+  locale: "en_US",
+  type: "website",
 };
 
 export default function RootLayout({ children }) {
