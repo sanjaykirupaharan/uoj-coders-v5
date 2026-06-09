@@ -24,8 +24,12 @@ export default function HeroSection() {
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          className="w-full flex justify-center lg:justify-start"
+          transition={{ 
+            duration: 0.4, 
+            ease: [0.16, 1, 0.3, 1], 
+            delay: 0.2 
+          }}
+          className="w-full flex justify-center lg:justify-start opacity-0 animate-fade-in"
         >
 
           <div className="relative w-full max-w-[400px] lg:max-w-[500px] aspect-square rounded-3xl border border-transparent bg-slate-900/5 backdrop-blur-xs md:p-1 flex items-center justify-center group overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.02)]">
@@ -35,7 +39,8 @@ export default function HeroSection() {
               alt="UOJ Coders" 
               width={56} // H-14 equivalent (14*4=56)
               height={56}
-              className="transform group-hover:scale-101 w-fit h-fits object-contain"
+              priority
+              className="transform group-hover:scale-101 w-fit h-fits object-contain animate-fade-in"
             />        
 
             {/* Corner Tech Accents matching your old design language but adjusted for theme */}
@@ -106,7 +111,8 @@ export default function HeroSection() {
           alt="UOJ Coders" 
           width={56} // H-14 equivalent (14*4=56)
           height={56}
-          className="absolute left-0 bottom-0 translate-y-[40%] w-screen h-auto filter grayscale  md:scale-100 scale-125 -z-10"
+          priority
+          className="absolute left-0 bottom-0 translate-y-[40%] w-screen h-auto filter grayscale animate-fade-in md:scale-100 scale-125 -z-10"
         />        
 
       </div>
