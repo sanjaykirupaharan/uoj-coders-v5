@@ -29,8 +29,15 @@ export default function HeroSection() {
         >
 
           <div className="relative w-full max-w-[400px] lg:max-w-[500px] aspect-square rounded-3xl border border-transparent bg-slate-900/5 backdrop-blur-xs md:p-1 flex items-center justify-center group overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.02)]">
-            <img src="/moon-v5-new.png" alt="UOJ Coders" className="w-fit h-fits object-contain" />
-            
+
+            <Image 
+              src="/moon-v5-new.png" // 👈 Matches filename in /public
+              alt="UOJ Coders" 
+              width={56} // H-14 equivalent (14*4=56)
+              height={56}
+              className="transform group-hover:scale-101 w-fit h-fits object-contain"
+            />        
+
             {/* Corner Tech Accents matching your old design language but adjusted for theme */}
             <div className="absolute top-4 left-4 w-4 h-4 border-t-2 border-l-2 border-slate-900 group-hover:border-fuchsia-500/50 transition-colors" />
             <div className="absolute top-4 right-4 w-4 h-4 border-t-2 border-r-2 border-slate-900 group-hover:border-fuchsia-500/50 transition-colors" />
@@ -94,7 +101,13 @@ export default function HeroSection() {
           </motion.div>
           
         </div>
-        <img src="/jaffna-silhouette.png" alt="Jaffna" className="absolute left-0 bottom-0 translate-y-[40%] w-screen h-auto filter grayscale  md:scale-100 scale-125 -z-10" />
+        <Image 
+          src="/jaffna-silhouette.png" // 👈 Matches filename in /public
+          alt="UOJ Coders" 
+          width={56} // H-14 equivalent (14*4=56)
+          height={56}
+          className="absolute left-0 bottom-0 translate-y-[40%] w-screen h-auto filter grayscale  md:scale-100 scale-125 -z-10"
+        />        
 
       </div>
     </BackgroundBeamsWithCollision>
