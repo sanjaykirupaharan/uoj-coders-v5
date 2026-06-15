@@ -46,11 +46,11 @@ export default function Navbar() {
             </button>
           ))}
           
-          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfxCO5w4OF_ZGoBmcX1dgnbgYRBxrf-IpopGY6qbtUni5OTfQ/viewform?usp=header" target="_blank">
+          {/* <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfxCO5w4OF_ZGoBmcX1dgnbgYRBxrf-IpopGY6qbtUni5OTfQ/viewform?usp=header" target="_blank">
           <button className="px-4 py-2 text-xs font-varino rounded-lg border border-blue-400/30 bg-blue-400/5 text-blue-300 hover:bg-blue-400/10 transition-all">
             REGISTER_NOW
           </button>
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Burger CTA */}

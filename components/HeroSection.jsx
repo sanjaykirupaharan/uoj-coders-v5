@@ -89,13 +89,13 @@ export default function HeroSection() {
             transition={{ delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto grid grid-cols-2"
           >
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfxCO5w4OF_ZGoBmcX1dgnbgYRBxrf-IpopGY6qbtUni5OTfQ/viewform?usp=header" target="_blank">
+            {/* <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfxCO5w4OF_ZGoBmcX1dgnbgYRBxrf-IpopGY6qbtUni5OTfQ/viewform?usp=header" target="_blank">
             <button 
               className="w-full sm:w-auto p-2 lg:px-8 lg:py-4 rounded-xl bg-gradient-to-r from-violet-500 to-cyan-500 text-slate-950 font-bold shadow-lg shadow-blue-500/10 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 z-40"
               >
               Register Now <ChevronRight size={16} />
             </button>
-              </Link>
+              </Link> */}
             
             <button 
               onClick={() => scrollToSection("timeline")} 
