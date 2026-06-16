@@ -10,7 +10,7 @@ const TIMELINE_DATA = [
     date: "June 08, 2026", 
     shortDesc: "Lock your team configuration early.", 
     longDesc: "Form alignments of up to 3 architects. Early entrants receive priority slots.", 
-    status: "current",
+    status: "past",
     time: "18.00 pm"
   },
   { 
@@ -19,7 +19,7 @@ const TIMELINE_DATA = [
     date: "June 14, 2026", 
     shortDesc: "Sync your sleep cycles.", 
     longDesc: "The entry script terminates automatically once forty coding teams register successfully. Fuel up on caffeine because forty selected teams will enter the dark.", 
-    status: "upcoming",
+    status: "current",
     time: "23.59 pm" 
   },
   { 
@@ -43,7 +43,7 @@ const TIMELINE_DATA = [
 ];
 
 export default function TimelineSection() {
-  const [activeItem, setActiveItem] = useState(1);
+  const [activeItem, setActiveItem] = useState(2);
 
   return (
     <section id="timeline" className="py-24 bg-slate-950/40 border-t border-slate-900/60 relative">
