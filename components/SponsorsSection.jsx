@@ -14,7 +14,7 @@ const PLATINUM_SPONSORS = [
 ];
 
 const SILVER_SPONSORS = [
-  { name: "WSO2", tier: "Silver", logo: "/sponsors/wso2-sq.png" },
+  { name: "WSO2", tier: "Silver", logo: "/sponsors/wso2.png" },
   { name: "Nanthi Ventures", tier: "Silver", logo: "/sponsors/nanthi.png" },
 ];
 
@@ -38,7 +38,7 @@ export default function SponsorsSection() {
             <CometCard>
               <button
                 type="button"
-                className="my-5 flex cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121]"
+                className="my-5 w-80 md:w-fit flex cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-gradient-to-br from-zinc-900 via-slate-800 to-zinc-950 border border-zinc-700/50 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] shadow-2xl backdrop-blur-md"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -48,7 +48,7 @@ export default function SponsorsSection() {
               >
                 <div
                   key={idx}
-                  className="px-10 py-5 rounded-xl bg-slate-900/20 border border-slate-800 hover:border-blue-500/40 hover:bg-slate-900/50 transition-all flex items-center gap-3 group cursor-pointer md:w-sm"
+                  className="px-6 py-5 rounded-xl bg-slate-900/20 border border-slate-800 hover:border-blue-500/40 hover:bg-slate-900/50 transition-all flex items-center gap-5 group cursor-pointer md:w-fit"
                 >
                   <span className="text-2xl transition-all duration-300">
                     <Image
@@ -57,11 +57,11 @@ export default function SponsorsSection() {
                       width={10}
                       height={5}
                       priority
-                      className="transform group-hover:scale-101 w-40 h-40 rounded-xl object-contain animate-fade-in"
+                      className="transform group-hover:scale-101 w-40 h-40 border rounded-xl object-contain animate-fade-in"
                     />
                   </span>
                   <div>
-                    <div className="font-semibold text-m text-slate-300 group-hover:text-white transition-colors">
+                    <div className="font-semibold text-lg text-slate-300 group-hover:text-white transition-colors">
                       {sp.name}
                     </div>
                     <div className="text-[11px] font-varino text-slate-500 uppercase">
@@ -93,7 +93,7 @@ export default function SponsorsSection() {
             <CometCard>
               <button
                 type="button"
-                className="my-5 flex cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121]"
+                className="my-5 w-80 flex cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-gradient-to-br from-slate-500 via-zinc-500 to-slate-400 border border-white  shadow-xl"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -103,7 +103,7 @@ export default function SponsorsSection() {
               >
                 <div
                   key={idx}
-                  className="px-10 py-5 rounded-xl bg-slate-900/20 border border-slate-800 hover:border-blue-500/40 hover:bg-slate-900/50 transition-all flex items-center gap-3 group cursor-pointer md:w-sm"
+                  className="px-6 py-5 rounded-xl bg-slate-900/20 border border-slate-800 hover:border-blue-500/40 hover:bg-slate-900/50 transition-all flex items-center gap-5 group cursor-pointer md:w-fit"
                 >
                   <span className="text-2xl transition-all duration-300">
                     <Image
@@ -112,14 +112,14 @@ export default function SponsorsSection() {
                       width={10}
                       height={5}
                       priority
-                      className="transform group-hover:scale-101 w-40 h-40 rounded-xl object-contain animate-fade-in"
+                      className="transform group-hover:scale-101 w-40 h-35 rounded-xl object-contain animate-fade-in"
                     />
                   </span>
                   <div>
-                    <div className="font-semibold text-m text-slate-300 group-hover:text-white transition-colors">
+                    <div className="font-semibold text-lg group-hover:text-white transition-colors">
                       {sp.name}
                     </div>
-                    <div className="text-[11px] font-varino text-slate-500 uppercase">
+                    <div className="text-[11px] font-varino group-hover:text-white uppercase">
                       {sp.tier} Sponsor
                     </div>
                   </div>
