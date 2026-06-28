@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-// import { Send, MessageSquare, ExternalLink } from "lucide-react";
-import { FaLinkedin, FaFacebook, FaYoutube } from "react-icons/fa6";
 import Image from "next/image";
+import { FaLinkedin, FaFacebook, FaYoutube } from "react-icons/fa6";
+// import { Send, MessageSquare, ExternalLink } from "lucide-react";
 // import { IoMail } from "react-icons/io5";
 
 export default function ContactSection() {

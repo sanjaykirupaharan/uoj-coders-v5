@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import { SquigglyText } from "@/components/ui/squiggly-text";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { CometCard } from "@/components/ui/comet-card";
+// import { SquigglyText } from "@/components/ui/squiggly-text";
 
 const EncryptedText = dynamic(() => import("./ui/encrypted-text"), {
   ssr: false,
@@ -47,7 +47,7 @@ export default function SponsorsSection() {
                 }}
               >
                 <div
-                  key={idx}
+                  key={sp.idx}
                   className="px-6 py-5 rounded-xl bg-slate-900/20 border border-slate-800 hover:border-blue-500/40 hover:bg-slate-900/50 transition-all flex items-center gap-5 group cursor-pointer md:w-fit"
                 >
                   <span className="text-2xl transition-all duration-300">
@@ -102,7 +102,7 @@ export default function SponsorsSection() {
                 }}
               >
                 <div
-                  key={idx}
+                  key={sp.idx}
                   className="px-6 py-5 rounded-xl bg-slate-900/20 border border-slate-800 hover:border-blue-500/40 hover:bg-slate-900/50 transition-all flex items-center gap-5 group cursor-pointer md:w-fit"
                 >
                   <span className="text-2xl transition-all duration-300">

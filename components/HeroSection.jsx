@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { ChevronRight, Moon, Compass } from "lucide-react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+// import Link from "next/link";
 
 export default function HeroSection() {
   const scrollToSection = (id) => {

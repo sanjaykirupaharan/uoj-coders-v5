@@ -1,9 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { PreviousCoders } from "./PreviousCoders";
+import { MobileHistoryDropdown } from "./MobileHistoryDropdown";
+// import { Menu, X } from "lucide-react";
+// import Image from "next/image";
+// import Link from "next/link";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -56,47 +58,73 @@ export default function Navbar() {
               </button>
             ),
           )}
-
-          {/* <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfxCO5w4OF_ZGoBmcX1dgnbgYRBxrf-IpopGY6qbtUni5OTfQ/viewform?usp=header" target="_blank">
-          <button className="px-4 py-2 text-xs font-varino rounded-lg border border-blue-400/30 bg-blue-400/5 text-blue-300 hover:bg-blue-400/10 transition-all">
-            REGISTER_NOW
-          </button>
-          </Link> */}
+          <PreviousCoders />
         </div>
 
         {/* Mobile Burger CTA */}
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden text-slate-300 hover:text-slate-100 transition-colors"
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="text-slate-400 hover:text-white p-2"
+            aria-label="Toggle Navigation Menu"
+          >
+            {mobileMenuOpen ? (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Sidebar Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="md:hidden bg-[#030712]/95 border-b border-slate-900 backdrop-blur-lg px-4 py-6 flex flex-col gap-4 text-center text-lg font-medium"
-          >
-            {["About", "Timeline", "Guidelines", "Sponsors", "Contact"].map(
-              (item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
-                  className="py-2 text-slate-300 hover:text-blue-300 transition-colors"
-                >
-                  {item}
-                </button>
-              ),
-            )}
-            {/* <button onClick={() => scrollToSection("contact")} className="mt-2 w-full py-3 rounded-lg bg-gradient-to-r from-violet-400 to-indigo-500 text-sm font-bold text-slate-950">
-              Register Now
-            </button> */}
-          </motion.div>
+          <div className="md:hidden w-full bg-slate-950 border-t border-slate-900 px-4 pt-2 pb-6 space-y-2 animate-in fade-in slide-in-from-top-4 duration-200">
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="md:hidden bg-[#030712]/95 border-b border-slate-900 backdrop-blur-lg px-4 py-6 flex flex-col gap-4 text-center text-lg font-medium"
+            >
+              {["About", "Timeline", "Guidelines", "Sponsors", "Contact"].map(
+                (item) => (
+                  <button
+                    key={item}
+                    onClick={() => scrollToSection(item.toLowerCase())}
+                    className="py-2 text-slate-300 hover:text-blue-300 transition-colors"
+                  >
+                    {item}
+                  </button>
+                ),
+              )}
+              <MobileHistoryDropdown />
+            </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </nav>
