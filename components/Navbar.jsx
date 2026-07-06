@@ -46,18 +46,23 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8 text-sm lg:text-md font-medium text-slate-300">
-          {["About", "Timeline", "Guidelines", "Sponsors", "Contact"].map(
-            (item) => (
-              <button
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase())}
-                className="hover:text-blue-300 transition-colors relative py-1 group"
-              >
-                {item}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full" />
-              </button>
-            ),
-          )}
+          {[
+            "About",
+            "Timeline",
+            "Guidelines",
+            "Contenders",
+            "Sponsors",
+            "Contact",
+          ].map((item) => (
+            <button
+              key={item}
+              onClick={() => scrollToSection(item.toLowerCase())}
+              className="hover:text-blue-300 transition-colors relative py-1 group"
+            >
+              {item}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full" />
+            </button>
+          ))}
           <PreviousCoders />
         </div>
 
@@ -111,17 +116,22 @@ export default function Navbar() {
               exit={{ opacity: 0, y: -10 }}
               className="md:hidden bg-[#030712]/95 border-b border-slate-900 backdrop-blur-lg px-4 py-6 flex flex-col gap-4 text-center text-lg font-medium"
             >
-              {["About", "Timeline", "Guidelines", "Sponsors", "Contact"].map(
-                (item) => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item.toLowerCase())}
-                    className="py-2 text-slate-300 hover:text-blue-300 transition-colors"
-                  >
-                    {item}
-                  </button>
-                ),
-              )}
+              {[
+                "About",
+                "Timeline",
+                "Guidelines",
+                "Contenders",
+                "Sponsors",
+                "Contact",
+              ].map((item) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(item.toLowerCase())}
+                  className="py-2 text-slate-300 hover:text-blue-300 transition-colors"
+                >
+                  {item}
+                </button>
+              ))}
               <MobileHistoryDropdown />
             </motion.div>
           </div>

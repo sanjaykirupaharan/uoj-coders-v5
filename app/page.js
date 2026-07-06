@@ -7,6 +7,7 @@ import TimelineSection from "@/components/TimelineSection";
 import GuidelinesSection from "@/components/GuidelinesSection";
 import SponsorsSection from "@/components/SponsorsSection";
 import ContactSection from "@/components/ContactSection";
+import FinalistsSection from "@/components/FinalistsSection";
 
 // 1. Import your brand new companion component
 import MascotCompanion from "@/components/MascotCompanion";
@@ -26,6 +27,7 @@ export default function CompetitionSite() {
         <AboutSection />
         <TimelineSection />
         <GuidelinesSection />
+        <FinalistsSection />
         <SponsorsSection />
         <ContactSection />
       </main>
