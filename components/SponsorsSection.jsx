@@ -38,7 +38,7 @@ export default function SponsorsSection() {
             <CometCard>
               <button
                 type="button"
-                className="my-5 w-80 md:w-fit flex cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-gradient-to-br from-zinc-900 via-slate-800 to-zinc-950 border border-zinc-700/50 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] shadow-2xl backdrop-blur-md"
+                className="my-5 w-80 md:w-fit flex cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-gradient-to-br from-zinc-900 via-slate-950 to-zinc-750 border border-zinc-700/50 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] shadow-2xl backdrop-blur-md"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -93,7 +93,7 @@ export default function SponsorsSection() {
             <CometCard>
               <button
                 type="button"
-                className="my-5 w-80 flex cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-gradient-to-br from-slate-500 via-zinc-500 to-slate-400 border border-white  shadow-xl"
+                className="my-2 w-80 flex cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-gradient-to-tr from-slate-700 via-slate-650 to-slate-700 border border-white  shadow-xl"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
