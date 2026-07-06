@@ -27,7 +27,7 @@ export default function SponsorsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-3 mb-12">
           <div className="text-xs font-varino text-pink-400 uppercase tracking-widest">
-            // 04 . POWERED BY
+            // 05 . POWERED BY
           </div>
           <h2 className="text-3xl sm:text-4xl font-cust font-bold bg-gradient-to-r from-violet-500 via-cyan-400 to-indigo-500 bg-clip-text text-transparent w-fit mx-auto">
             PATRONS OF THE NIGHT

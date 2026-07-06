@@ -113,7 +113,7 @@ export default function FinalistsDashboard() {
             </span>
             <div className="h-4 w-[1px] bg-slate-800" />
             <span>
-              TOTAL: <span className="text-amber-400 font-bold">36</span>
+              TOTAL: <span className="text-blue-400 font-bold">36</span>
             </span>
           </div>
         </div>
@@ -150,15 +150,15 @@ export default function FinalistsDashboard() {
               onClick={() => setSelectedUni(uni)}
               className={`p-3 rounded-xl border text-left font-mono transition-all duration-200 ${
                 selectedUni === uni
-                  ? "bg-gradient-to-br from-zinc-800 to-zinc-950 border-zinc-600 shadow-xl"
-                  : "bg-slate-900/20 border-slate-900/60 hover:border-slate-800"
+                  ? "bg-gradient-to-br from-blue-900 to-blue-750 border-blue-600 shadow-xl"
+                  : "bg-slate-600/20 border-slate-900/60 hover:border-slate-800"
               }`}
             >
-              <div className="text-[12px] text-slate-500 uppercase tracking-tight truncate">
+              <div className="text-[12px] text-white uppercase tracking-tight truncate">
                 {uni === "All" ? "Global Pool" : uni}
               </div>
               <div
-                className={`text-base font-bold mt-1 ${selectedUni === uni ? "text-amber-400" : "text-slate-300"}`}
+                className={`text-base font-bold mt-1 ${selectedUni === uni ? "text-blue-400" : "text-slate-300"}`}
               >
                 {String(uniDistribution[uni]).padStart(2, "0")}
               </div>
@@ -171,7 +171,7 @@ export default function FinalistsDashboard() {
           {filteredTeams.map((team) => (
             <div
               key={team.id} // Unique mapping key rule satisfied
-              className="p-4 rounded-xl bg-gradient-to-br from-zinc-900/70 to-slate-950 border border-slate-900/80 hover:border-zinc-800 transition-all duration-200 group"
+              className="p-4 rounded-xl bg-gradient-to-br from-zinc-950/70 to-slate-150 border border-slate-900/80 hover:border-zinc-800 transition-all duration-200 group"
             >
               <span className="text-[12px] font-mono tracking-wider text-slate-500 block uppercase">
                 Uni. of {team.university}

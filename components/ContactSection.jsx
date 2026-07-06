@@ -14,7 +14,7 @@ export default function ContactSection() {
       <div className="gap-12 items-center">
         <div className="lg:col-span-5 space-y-6">
           <div className="text-xs font-varino text-pink-400 uppercase tracking-widest">
-            // 05 . ESTABLISH COMM LINK
+            // 06 . ESTABLISH COMM LINK
           </div>
           <h2 className="text-3xl sm:text-4xl font-cust font-bold bg-gradient-to-r from-violet-500 via-cyan-400 to-indigo-500 bg-clip-text text-transparent w-fit mx-auto">
             INITIALIZE HANDSHAKE
