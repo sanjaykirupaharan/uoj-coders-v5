@@ -2,7 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-// import { Meteors } from "../ui/meteors";
+import { Meteors } from "@/components/ui/meteors";
+import { DottedGlowBackground } from "@/components/ui/dotted-glow-background";
 
 const PLATINUM_SPONSORS = [
   { name: "Unicom SD", tier: "Platinum", logo: "/sponsors/uni.png" },
@@ -40,7 +41,7 @@ export default function SponsorsSection() {
             {PLATINUM_SPONSORS.map((sp) => (
               <div
                 key={sp.name} // Added unique key on outermost mapped element for React rendering stability
-                className="bg-gradient-to-br from-slate-400/20 to-transparent w-full max-w-4xl p-[1px] rounded-[18px] shadow-2xl hover:scale-[1.01] transition-transform duration-300 "
+                className="bg-gradient-to-br from-slate-400/0 to-transparent w-full max-w-4xl p-[1px] rounded-[18px] shadow-2xl hover:scale-[1.01] transition-transform duration-300 "
                 style={{ transformStyle: "preserve-3d" }}
               >
                 <div className="px-8 py-4 rounded-[17px] 0 border border-white/10 flex flex-col items-center gap-6 text-center">
@@ -57,10 +58,24 @@ export default function SponsorsSection() {
                       width={320} // High resolution container dimensions
                       height={180}
                       priority
-                      className="w-full md:w-3/5 h-auto object-contain transform hover:scale-105 duration-300 transition-transform animate-fade-in"
+                      className="scale-125 w-60 md:w-3/5 h-auto object-contain transform hover:scale-135 duration-300 transition-transform animate-fade-in z-40"
                     />
                   </div>
                 </div>
+                <DottedGlowBackground
+                  className="pointer-events-none mask-radial-to-90% mask-radial-at-center"
+                  opacity={1}
+                  gap={10}
+                  radius={1.6}
+                  colorLightVar="--color-neutral-500"
+                  glowColorLightVar="--color-neutral-600"
+                  colorDarkVar="--color-neutral-500"
+                  glowColorDarkVar="--color-sky-800"
+                  backgroundOpacity={10}
+                  speedMin={0.3}
+                  speedMax={1.6}
+                  speedScale={1}
+                />
               </div>
             ))}
           </div>
@@ -86,10 +101,24 @@ export default function SponsorsSection() {
                       alt={`${sp.name} Logo`}
                       width={220}
                       height={120}
-                      className="w-3/5 h-auto object-contain transform hover:scale-105 duration-300 transition-transform animate-fade-in"
+                      className="w-full md:w-3/5 h-auto object-contain transform hover:scale-105 duration-300 transition-transform animate-fade-in z-40"
                     />
                   </div>
                 </div>
+                <DottedGlowBackground
+                  className="pointer-events-none mask-radial-to-90% mask-radial-at-center"
+                  opacity={1}
+                  gap={10}
+                  radius={1.6}
+                  colorLightVar="--color-neutral-500"
+                  glowColorLightVar="--color-neutral-600"
+                  colorDarkVar="--color-neutral-500"
+                  glowColorDarkVar="--color-sky-800"
+                  backgroundOpacity={10}
+                  speedMin={0.3}
+                  speedMax={1.6}
+                  speedScale={1}
+                />
               </div>
             ))}
           </div>
