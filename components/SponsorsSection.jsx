@@ -1,31 +1,31 @@
 "use client";
-import React from "react";
-import dynamic from "next/dynamic";
-import Image from "next/image";
-import { CometCard } from "@/components/ui/comet-card";
-// import { SquigglyText } from "@/components/ui/squiggly-text";
 
-const EncryptedText = dynamic(() => import("./ui/encrypted-text"), {
-  ssr: false,
-});
+import React from "react";
+import Image from "next/image";
+// import { Meteors } from "../ui/meteors";
 
 const PLATINUM_SPONSORS = [
   { name: "Unicom SD", tier: "Platinum", logo: "/sponsors/uni.png" },
 ];
 
 const SILVER_SPONSORS = [
-  { name: "WSO2", tier: "Silver", logo: "/sponsors/wso2.png" },
-  { name: "Nanthi Ventures", tier: "Silver", logo: "/sponsors/nanthi.png" },
+  { name: "WSO2", tier: "Silver", logo: "/sponsors/wso2-white.png" },
+  { name: "Nanthi Ventures", tier: "Silver", logo: "/sponsors/nanthi-v.png" },
 ];
 
 export default function SponsorsSection() {
   return (
     <section
       id="sponsors"
-      className="py-24 sm:h-screen  bg-slate-950/20 border-t border-slate-900/60 overflow-hidden"
+      className="text-center pt-24 pb-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative border-t border-slate-900/60 lg:h-screen"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center space-y-3 mb-12">
+      {/* Dynamic ambient backdrop light leaks */}
+      <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-white/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-blue-400/5 blur-[120px] rounded-full pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Section Header */}
+        <div className="text-center space-y-3 mb-10">
           <div className="text-xs font-varino text-pink-400 uppercase tracking-widest">
             // 05 . POWERED BY
           </div>
@@ -33,114 +33,66 @@ export default function SponsorsSection() {
             PATRONS OF THE NIGHT
           </h2>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-6 max-w-4xl mx-auto">
-          {PLATINUM_SPONSORS.map((sp, idx) => (
-            <CometCard>
-              <button
-                type="button"
-                className="my-5 w-80 md:w-fit flex cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-gradient-to-br from-zinc-950 via-black/90 to-slate-950 border border-zinc-700/50 "
-                aria-label="View invite F7RA"
-                style={{
-                  transformStyle: "preserve-3d",
-                  transform: "none",
-                  opacity: 1,
-                }}
+
+        {/* Dynamic Sponsor Layout Container */}
+        <div className="flex flex-col gap-8 max-w-4xl mx-auto w-full">
+          <div className="flex justify-center w-full">
+            {PLATINUM_SPONSORS.map((sp) => (
+              <div
+                key={sp.name} // Added unique key on outermost mapped element for React rendering stability
+                className="bg-gradient-to-br from-slate-400/20 to-transparent w-full max-w-4xl p-[1px] rounded-[18px] shadow-2xl hover:scale-[1.01] transition-transform duration-300 "
+                style={{ transformStyle: "preserve-3d" }}
               >
-                <div
-                  key={sp.idx}
-                  className="px-6 py-5 rounded-xl bg-slate-900/20 border border-slate-800 hover:border-blue-500/40 hover:bg-slate-900/50 transition-all flex items-center gap-5 group cursor-pointer md:w-fit"
-                >
-                  <span className="text-2xl transition-all duration-300">
+                <div className="px-8 py-4 rounded-[17px] 0 border border-white/10 flex flex-col items-center gap-6 text-center">
+                  {/* 1. TIER LABEL ON TOP */}
+                  <span className="text-sm font-mono tracking-widest bg-slate-950 text-blue-400 px-4.5 py-1.5 rounded-full font-extrabold uppercase shadow-md">
+                    {sp.tier} SPONSOR
+                  </span>
+
+                  {/* 2. BIG LOGO CONTAINER */}
+                  <div className="w-full h-44 sm:h-52 shrink-0 flex items-center justify-center p-4 rounded-xl  shadow-inner">
                     <Image
                       src={sp.logo}
-                      alt={sp.name}
-                      width={10}
-                      height={5}
+                      alt={`${sp.name} Logo`}
+                      width={320} // High resolution container dimensions
+                      height={180}
                       priority
-                      className="transform group-hover:scale-101 w-40 h-40 border rounded-xl object-contain animate-fade-in"
+                      className="w-full md:w-3/5 h-auto object-contain transform hover:scale-105 duration-300 transition-transform animate-fade-in"
                     />
-                  </span>
-                  <div>
-                    <div className="font-semibold text-lg text-slate-300 group-hover:text-white transition-colors">
-                      {sp.name}
-                    </div>
-                    <div className="text-[11px] font-varino text-slate-500 uppercase">
-                      {sp.tier} Sponsor
-                    </div>
                   </div>
                 </div>
-              </button>
-            </CometCard>
-          ))}
+              </div>
+            ))}
+          </div>
 
-          {/* <SquigglyText
-          stepDuration={70}
-          scale={[2, 4]}
-          className="text-center text-pink-500"
-        >
-          <EncryptedText 
-          text="Announcing our sponsors soon..." 
-          className="text-4xl text-center" 
-          vencryptedClassName="text-red-900"
-          revealedClassName="text-slate-300" 
-          revealDelayMs={50}
-          />
-        </SquigglyText>{" "} */}
-        </div>
-
-        <div className="flex flex-wrap justify-center items-center gap-6 max-w-4xl mx-auto">
-          {SILVER_SPONSORS.map((sp, idx) => (
-            <CometCard>
-              <button
-                type="button"
-                className="my-2 w-80 flex cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-gradient-to-tr from-slate-700 via-slate-800 to-slate-600 border border-white shadow-xl"
-                aria-label="View invite F7RA"
-                style={{
-                  transformStyle: "preserve-3d",
-                  transform: "none",
-                  opacity: 1,
-                }}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+            {SILVER_SPONSORS.map((sp) => (
+              <div
+                key={sp.name} // Unique outer mapped key
+                className="p-[1px] rounded-[18px] bg-gradient-to-br from-slate-400/20 to-transparent shadow-xl hover:scale-[1.01] transition-transform duration-300"
+                style={{ transformStyle: "preserve-3d" }}
               >
-                <div
-                  key={sp.idx}
-                  className="px-6 py-5 rounded-xl bg-slate-900/20 border border-slate-800 hover:border-blue-500/40 hover:bg-slate-900/50 transition-all flex items-center gap-5 group cursor-pointer md:w-fit"
-                >
-                  <span className="text-2xl transition-all duration-300">
+                {/* Cohesive Silver Metallic card matches the Platinum look beautifully */}
+                <div className="px-6 py-4 rounded-[17px] border border-white/10 flex flex-col items-center gap-5 text-center">
+                  {/* 1. TIER LABEL ON TOP */}
+                  <span className="text-sm font-mono tracking-widest bg-slate-950 text-slate-300 px-3.5 py-1.5 rounded-full font-bold uppercase shadow-sm">
+                    {sp.tier} SPONSOR
+                  </span>
+
+                  {/* 2. BIG LOGO CONTAINER */}
+                  <div className="w-full h-36 sm:h-44 shrink-0 flex items-center justify-center p-3 rounded-xl  shadow-sm">
                     <Image
                       src={sp.logo}
-                      alt={sp.name}
-                      width={10}
-                      height={5}
-                      priority
-                      className="transform group-hover:scale-101 w-40 h-35 rounded-xl object-contain animate-fade-in"
+                      alt={`${sp.name} Logo`}
+                      width={220}
+                      height={120}
+                      className="w-3/5 h-auto object-contain transform hover:scale-105 duration-300 transition-transform animate-fade-in"
                     />
-                  </span>
-                  <div>
-                    <div className="font-semibold text-lg group-hover:text-white transition-colors">
-                      {sp.name}
-                    </div>
-                    <div className="text-[11px] font-varino group-hover:text-white uppercase">
-                      {sp.tier} Sponsor
-                    </div>
                   </div>
                 </div>
-              </button>
-            </CometCard>
-          ))}
-
-          {/* <SquigglyText
-          stepDuration={70}
-          scale={[2, 4]}
-          className="text-center text-pink-500"
-        >
-          <EncryptedText 
-          text="Announcing our sponsors soon..." 
-          className="text-4xl text-center" 
-          vencryptedClassName="text-red-900"
-          revealedClassName="text-slate-300" 
-          revealDelayMs={50}
-          />
-        </SquigglyText>{" "} */}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
