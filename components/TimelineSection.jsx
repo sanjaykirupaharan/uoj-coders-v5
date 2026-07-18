@@ -21,7 +21,7 @@ const TIMELINE_DATA = [
     shortDesc: "Sync your sleep cycles.",
     longDesc:
       "The entry script terminates automatically once forty coding teams register successfully. Fuel up on caffeine because forty selected teams will enter the dark.",
-    status: "current",
+    status: "past",
     time: "23.59 pm",
   },
   {
@@ -31,7 +31,7 @@ const TIMELINE_DATA = [
     shortDesc: "12 continuous hours of compilation.",
     longDesc:
       "The prime event. Build and test robust solutions responding to problems thrown.",
-    status: "upcoming",
+    status: "current",
     time: "18.00 pm",
   },
   {
@@ -47,7 +47,7 @@ const TIMELINE_DATA = [
 ];
 
 export default function TimelineSection() {
-  const [activeItem, setActiveItem] = useState(2);
+  const [activeItem, setActiveItem] = useState(3);
 
   return (
     <section
