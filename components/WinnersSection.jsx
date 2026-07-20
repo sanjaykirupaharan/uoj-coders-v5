@@ -19,7 +19,7 @@ const WINNERS_DATA = {
   second: {
     teamName: "Fih",
     university: "University of Predeniya",
-    prize: "Rs. 3,000",
+    prize: "Rs. 30,000",
     badge: "1ST RUNNER-UP",
     // Pure Silver Tones
     metalName: "Silver",
