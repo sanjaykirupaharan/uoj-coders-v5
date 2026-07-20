@@ -29,7 +29,7 @@ const WINNERS_DATA = {
     textColor: "text-slate-300",
   },
   third: {
-    teamName: "Repeaters",
+    teamName: "RePeaTers",
     university: "University of Kelaniya",
     prize: "Rs. 20,000",
     badge: "2ND RUNNER-UP",
