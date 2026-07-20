@@ -9,7 +9,7 @@ export default function GuidelinesSection() {
   return (
     <section
       id="guidelines"
-      className="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900/60 h-auto lg:h-screen"
+      className="pt-30 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900/60 h-auto lg:h-screen"
     >
       <div className="text-center space-y-3 mb-12">
         <div className="text-xs font-varino text-pink-400 uppercase tracking-widest">

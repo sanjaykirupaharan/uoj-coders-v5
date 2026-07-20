@@ -49,6 +49,7 @@ export default function Navbar() {
           {[
             "About",
             "Timeline",
+            "Winners",
             "Guidelines",
             "Contenders",
             "Sponsors",
@@ -119,6 +120,7 @@ export default function Navbar() {
               {[
                 "About",
                 "Timeline",
+                "Winners",
                 "Guidelines",
                 "Contenders",
                 "Sponsors",

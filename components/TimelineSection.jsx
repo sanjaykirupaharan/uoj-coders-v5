@@ -31,7 +31,7 @@ const TIMELINE_DATA = [
     shortDesc: "12 continuous hours of compilation.",
     longDesc:
       "The prime event. Build and test robust solutions responding to problems thrown.",
-    status: "current",
+    status: "past",
     time: "18.00 pm",
   },
   {
@@ -41,13 +41,13 @@ const TIMELINE_DATA = [
     shortDesc: "Victory at the Dawn.",
     longDesc:
       "From midnight coding to morning glory, we honor the ultimate developers.",
-    status: "upcoming",
+    status: "past",
     time: "06.00 am",
   },
 ];
 
 export default function TimelineSection() {
-  const [activeItem, setActiveItem] = useState(3);
+  const [activeItem, setActiveItem] = useState(4);
 
   return (
     <section
