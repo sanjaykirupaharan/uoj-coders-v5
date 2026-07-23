@@ -18,7 +18,7 @@ const WINNERS_DATA = {
   },
   second: {
     teamName: "Fih",
-    university: "University of Predeniya",
+    university: "University of Peredeniya",
     prize: "Rs. 30,000",
     badge: "1ST RUNNER-UP",
     // Pure Silver Tones
@@ -140,7 +140,7 @@ export default function WinnersSection() {
   return (
     <section
       id="winners"
-      className="pt-30 bg-[#030712] relative overflow-hidden border-t border-slate-900/80 lg:h-screen"
+      className="pt-30 bg-[#030712] relative overflow-hidden border-t border-slate-900/80 "
     >
       {/* Background Matrix-like Subtle Ambient Shadows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-amber-500/5 blur-[120px] rounded-full pointer-events-none" />
@@ -149,11 +149,11 @@ export default function WinnersSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {}
         {/* Dynamic Header mimicking UOJ terminal system styling */}
-        <div className="text-center space-y-1 mb-20">
+        <div className="text-center space-y-1 mb-10">
           <div className="text-xs font-varino text-pink-400 uppercase tracking-widest">
             // 05 . SECTOR VICTORS
           </div>
-          <h2 className="text-3xl sm:text-4xl font-cust font-bold bg-gradient-to-r from-violet-500 via-cyan-400 to-indigo-500 bg-clip-text text-transparent w-fit mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-cust font-bold bg-gradient-to-r from-violet-500 via-cyan-400 to-indigo-500 bg-clip-text text-transparent w-fit mx-auto mb-5">
             ALIGNED CONTENDERS
           </h2>
           <p className="text-slate-400 text-sm max-w-lg mx-auto font-mono pt-6">
