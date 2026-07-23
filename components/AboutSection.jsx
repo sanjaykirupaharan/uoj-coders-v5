@@ -20,12 +20,10 @@ export default function AboutSection() {
             UoJCoders v5.0 is an intensive, 12-hour inter-university competitive
             programming hackathon open to all undergraduate students across Sri
             Lanka. Jointly organized by the Computer Society and the Department
-            of Computer Science at the University of Jaffna, the event is
-            specifically designed to sharpen the algorithmic thinking and
-            complex problem-solving skills of future computing professionals.
-            Inspired by the prestigious global IEEEXtreme framework, the
-            competition challenges participants to resolve real-world scenarios
-            by implementing optimized data structures and algorithms.
+            of Computer Science at the University of Jaffna. Inspired by the
+            prestigious global IEEEXtreme framework, the competition challenges
+            participants to resolve real-world scenarios by implementing
+            optimized data structures and algorithms.
           </p>
           <p className="text-slate-300 md:text-xl leading-relaxed font-normal">
             The UoJCoders v5.0 competition is planned to be held on on July 18th
